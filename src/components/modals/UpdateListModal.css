@@ -1,0 +1,13 @@
+.UpdateListModal {
+  width: 500px;
+}
+
+.UpdateListModal .Button {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .UpdateListModal {
+    width: 100%;
+  }
+}

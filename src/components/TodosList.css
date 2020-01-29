@@ -1,0 +1,7 @@
+.TodosList .Todo {
+  margin-bottom: 30px;
+}
+
+.TodosList .Todo:last-child {
+  margin-bottom: 0px;
+}

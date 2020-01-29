@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Staatliches|Poppins:600,700|IBM+Plex+Sans:700');
+@import url('./transitions.css');
+
+@font-face {
+  font-family: 'Kollektif';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/Kollektif.ttf'); /* IE9 Compat Modes */
+  src: local('Open Sans'), local('OpenSans'), url('./assets/Kollektif.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+:root {
+  --color-white: white;
+  --color-black: black;
+  --color-grey: rgba(0, 0, 0, 0.3);
+  --color-grey2: rgba(0, 0, 0, 0.1);
+  --color-grey3: rgba(0, 0, 0, 0.04);
+  --color-primary: rgb(251, 153, 72);
+  --color-primary-darker: rgb(186, 104, 37);
+
+  --primary-text-color: var(--color-black);
+  --secondary-text-color: var(--color-grey);
+
+  --primary-background-color: var(--color-white);
+  --secondary-background-color: var(--color-grey3);
+
+  --icon-color: var(--color-black);
+  --icon-background-color: var(--color-grey2);
+  --icon-hover-background-color: var(--color-primary);
+
+  --primary-shadow-color: rgba(0, 0, 0, 0.05);
+  --secondary-shadow-color: rgba(0, 0, 0, 0.15);
+  --button-shadow-color: rgba(248, 151, 69, 0.4);
+  --button-white-shadow-color: rgba(255, 255, 255, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  font-family: 'Montserrat';
+  outline: none !important;
+}
+
+a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none !important;
+}
+
+body {
+  background: var(--secondary-background-color);
+}
+
+/* Default text styles */
+h1 {
+  font-family: 'Poppins';
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+h2 {
+  font-family: 'Poppins';
+  font-size: 40px;
+  margin: 0px;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+p {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+b {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  b {
+    font-size: 14px;
+  }
+}

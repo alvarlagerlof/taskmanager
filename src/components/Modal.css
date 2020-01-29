@@ -1,0 +1,94 @@
+.ReactModalPortal,
+.ReactModal__Overlay {
+  z-index: 100 !important;
+}
+
+.ReactModal__Overlay {
+  background-color: rgb(0, 0, 0, 0.4) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ReactModal__Content {
+  display: block;
+  margin-top: -10%;
+  max-width: 600px;
+}
+
+.ReactModal__Content > div {
+  border-radius: 10px;
+  box-shadow: 0px 40px 100px var(--secondary-shadow-color);
+  background: white;
+}
+
+/* Header */
+.ReactModal__Content div .Flex {
+  display: flex;
+}
+
+/* Text */
+.ReactModal__Content div .Flex > div:nth-child(1) {
+  flex-grow: 1;
+  padding: 40px;
+}
+
+.ReactModal__Content div .Flex > div:nth-child(1) h2 {
+  margin-bottom: 15px;
+}
+
+/* Close button */
+.ReactModal__Content div .Flex > div:nth-child(2) {
+  padding: 40px;
+  padding-left: 0px;
+  padding-top: 55px !important;
+}
+
+.ReactModal__Content div .Flex > div:nth-child(2) div:hover i {
+  transform: rotate(90deg);
+}
+
+/* Inserted content */
+.ReactModal__Content div > .Content {
+  padding-top: 0px !important;
+  border-radius: 10px;
+}
+
+.ReactModal__Content div .Content > div {
+  border-radius: 10px;
+}
+
+.ReactModal__Content.Padded div > .Content {
+  padding: 40px;
+}
+
+/* Animations */
+.ReactModal__Body {
+  display: block;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .ReactModal__Content {
+    max-width: 100%;
+    width: calc(100% - 40px);
+    margin: 0;
+  }
+
+  /* Header */
+  /* Text */
+  .ReactModal__Content div .Flex > div:nth-child(1) {
+    padding: 30px;
+  }
+
+  /* Close button */
+  .ReactModal__Content > div .Flex > div:nth-child(2) {
+    padding: 30px;
+    padding-top: 35px !important;
+  }
+
+  /* Inserted content */
+  .ReactModal__Content.Padded div > .Content {
+    padding: 30px;
+  }
+}

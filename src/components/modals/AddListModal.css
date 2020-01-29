@@ -1,0 +1,13 @@
+.AddListModal {
+  width: 500px;
+}
+
+.AddListModal .Button {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .AddListModal {
+    width: 100%;
+  }
+}

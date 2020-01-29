@@ -1,0 +1,71 @@
+.Checkbox {
+  cursor: pointer;
+}
+
+.Checkbox > div {
+  margin: 0;
+  padding: 0;
+  width: 35px;
+  height: 35px;
+
+  border: 2px solid var(--color-grey);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 500ms cubic-bezier(0.15, 0.51, 0, 0.99);
+}
+
+.Checkbox > div > div {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 10px;
+  height: 18px;
+
+  border: 3px solid var(--color-primary);
+  border-top: none;
+  border-left: none;
+
+  transform: translateY(-1px) rotate(45deg) scale(0.5);
+  opacity: 0;
+
+  transition: all 500ms cubic-bezier(0.15, 0.51, 0, 0.99);
+}
+
+/* Hover */
+.Checkbox:hover > div {
+  border-color: var(--color-primary);
+}
+
+.Checkbox:hover > div > div {
+  opacity: 1;
+  transform: translateY(-1px) rotate(45deg) scale(1);
+}
+
+/* Checked */
+.Checkbox.Checked > div {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  box-shadow: 0px 5px 15px var(--button-shadow-color);
+}
+
+.Checkbox.Checked > div > div {
+  border-color: var(--color-white);
+  opacity: 1;
+  transform: translateY(-1px) rotate(45deg) scale(1);
+}
+
+@media only screen and (max-width: 600px) {
+  .Checkbox > div {
+    width: 30px;
+    height: 30px;
+  }
+
+  .Checkbox > div > div {
+    width: 7px;
+    height: 15px;
+    border-width: 2px;
+  }
+}

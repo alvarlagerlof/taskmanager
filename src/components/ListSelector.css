@@ -1,0 +1,27 @@
+.ListSelector {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ListSelector div:first-child div h3 {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.ListSelector div:first-child div .Triangle {
+  display: inline-block;
+  margin-left: 15px;
+  margin-bottom: -5px;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 7px solid rgba(0, 0, 0, 0.4);
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+}

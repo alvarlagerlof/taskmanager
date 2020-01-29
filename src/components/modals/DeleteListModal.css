@@ -1,0 +1,13 @@
+.DeleteListModal {
+  width: 500px;
+}
+
+.DeleteListModal .Button {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .DeleteListModal {
+    width: 100%;
+  }
+}

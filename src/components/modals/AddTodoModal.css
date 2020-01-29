@@ -1,0 +1,13 @@
+.AddTodoModal {
+  width: 500px;
+}
+
+.AddTodoModal .Button {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .AddTodoModal {
+    width: 100%;
+  }
+}

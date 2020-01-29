@@ -1,0 +1,11 @@
+.Group {
+  margin-bottom: 100px;
+}
+
+.Group span {
+  display: block;
+  text-transform: uppercase;
+  font-family: 'Poppins';
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.4);
+}

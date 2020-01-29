@@ -1,0 +1,72 @@
+.Header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Header > div:first-child {
+  flex-grow: 1;
+}
+
+.Header > div:first-child > div:first-child {
+  margin-bottom: 15px;
+}
+
+.Header > div:first-child > p {
+  margin-bottom: 30px;
+}
+
+.Header > div:last-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Header div:last-child button {
+  padding: 18px;
+  padding-bottom: 15px;
+}
+
+.Header div:last-child p:first-child,
+.Header div:last-child p:last-child {
+  display: inline-block;
+  margin: 0px;
+}
+
+.Header > div:last-child > button > p:first-child {
+  margin-right: 10px;
+  font-size: 40px;
+  height: 10px;
+  margin-top: -50px;
+  transform: translateY(7px);
+}
+
+.Header select {
+  transform: scale(1.5);
+}
+
+@media only screen and (max-width: 800px) {
+  .Header {
+    flex-direction: column;
+  }
+
+  .Header > div:first-child {
+    width: 100%;
+  }
+
+  .Header > div:first-child p {
+    max-width: 250px;
+  }
+
+  .Header > div:last-child {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .Header > div:last-child button {
+    width: 100%;
+    padding: 15px;
+  }
+}

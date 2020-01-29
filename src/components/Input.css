@@ -1,0 +1,38 @@
+.Input input,
+.Input textarea {
+  background: none;
+  outline: none;
+  resize: none;
+  border: none;
+  padding: 10px 0px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 16px;
+  border-bottom: 2px solid var(--secondary-text-color);
+  line-height: 1.6;
+
+  transition: border 200ms ease-in-out;
+}
+
+.Input input::placeholder,
+.Input textarea::placeholder {
+  transition: color 200ms ease-in-out;
+}
+
+.Input input:focus,
+.Input textarea:focus,
+.Input {
+  border-color: var(--color-primary);
+}
+
+.Input input:focus::placeholder,
+.Input textarea:focus::placeholder {
+  color: var(--color-primary);
+}
+
+@media only screen and (max-width: 600px) {
+  .Input input,
+  .Input textarea {
+    font-size: 14px;
+  }
+}

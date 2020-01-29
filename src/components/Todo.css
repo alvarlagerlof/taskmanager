@@ -1,0 +1,92 @@
+.Todo {
+  display: flex;
+  padding: 0px 10px;
+}
+
+/* Checkbox */
+.Todo > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 40px;
+}
+
+/* Text */
+.Todo div:nth-child(2) {
+  flex-grow: 1;
+}
+
+.Todo div:nth-child(2) span {
+  margin-bottom: 5px;
+}
+
+.Todo div:nth-child(2) textarea {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 0px;
+  resize: none;
+}
+
+.Todo div:nth-child(2) textarea:nth-child(1) {
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.Todo div:nth-child(2) textarea:nth-child(2) {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Delete button */
+.Todo > div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.Todo div:last-child > .IconButton {
+  transition: all 200ms ease-in-out;
+  transform: scale(0.9);
+  opacity: 0;
+  padding: 0px;
+}
+
+.Todo:hover div:last-child > .IconButton {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Other stuff */
+.Todo textarea {
+  transition: color 100ms ease-in-out;
+}
+
+.Todo > span {
+  transition: all 100ms ease-in-out;
+}
+
+.Todo.done textarea {
+  position: relative;
+  color: var(--secondary-text-color);
+  display: inline;
+}
+
+.Todo.done span {
+  text-decoration: line-through;
+  color: var(--color-primary);
+  font-size: 1em;
+}
+
+.Todo input[type='checkbox'] {
+  transform: scale(2);
+}
+
+@media only screen and (max-width: 600px) {
+  .Todo > div:first-child {
+    padding-right: 25px;
+  }
+}

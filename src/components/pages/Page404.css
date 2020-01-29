@@ -1,0 +1,27 @@
+.Page404 .Container {
+  padding-top: 200px;
+  padding-bottom: 0px;
+}
+
+.Page404 img {
+  max-width: 400px;
+  margin-bottom: 50px;
+}
+
+.Page404 p {
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .Page404 .Container {
+    padding-top: 150px;
+  }
+
+  .Page404 img {
+    width: 100%;
+  }
+
+  .Page404 p {
+    margin-bottom: 30px;
+  }
+}

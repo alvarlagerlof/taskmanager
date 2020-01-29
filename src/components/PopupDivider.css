@@ -1,0 +1,10 @@
+.PopupDivider {
+  padding: 15px 20px;
+}
+
+.PopupDivider div {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: var(--color-grey2);
+}

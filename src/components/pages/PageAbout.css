@@ -1,0 +1,21 @@
+.PageAbout .Container img {
+  float: right;
+  padding: 20px;
+  width: 60%;
+}
+
+.PageAbout .Container h2 {
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .PageAbout .Container img {
+    float: none;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .PageAbout .Container h2 {
+    margin-top: 50px;
+  }
+}

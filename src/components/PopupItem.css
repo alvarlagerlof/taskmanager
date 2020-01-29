@@ -1,0 +1,17 @@
+.PopupItem {
+  transition: all 500ms cubic-bezier(0.15, 0.51, 0, 0.99);
+  cursor: pointer;
+}
+
+.PopupItem.Padded {
+  padding: 15px 20px;
+}
+
+.PopupItem:hover {
+  background: var(--color-grey2);
+}
+
+.PopupItem.Selected {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
