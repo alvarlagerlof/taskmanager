@@ -1,5 +1,5 @@
-# Taskmaster
-✅ A todo list experiment using Redux and Firebase
+# ✅ Taskmaster
+A simple todo list experiment using Redux and Firebase
 
 ## Installation
 TBD
